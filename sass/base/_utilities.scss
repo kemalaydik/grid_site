@@ -1,0 +1,24 @@
+.u-mb-big {
+	margin-bottom: 8rem;
+
+	@include respond(tab-port) {
+		margin-bottom: 5rem;
+	}
+}
+.u-mb-md {
+	margin-bottom: 4rem;
+}
+
+.u-mb-sm {
+	margin-bottom: 1.5rem;
+}
+.u-mt-big {
+	margin-top: 8rem;
+	@include respond(tab-port) {
+		margin-top: 5rem;
+	}
+}
+
+.u-pt-big {
+	padding-top: 8rem;
+}

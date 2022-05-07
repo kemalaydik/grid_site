@@ -1,0 +1,64 @@
+@mixin clearfix {
+	&::after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+}
+
+@mixin absCenter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* --------------------------- Media Query Manager -------------------------- */
+// 0-600px phone;
+// 600px-900px tablet-portrait;
+// 900px-1200px tablet-landscape;
+// [1200px-1800px] desktop
+// 1800px + widescreen;
+
+@mixin respond($breakpoint) {
+	@if $breakpoint==xxxsm {
+		@media only screen and (max-width: $bp-xxxsm) {
+			@content;
+		}
+	}
+	@if $breakpoint==xxsm {
+		@media only screen and (max-width: $bp-xxsm) {
+			@content;
+		}
+	}
+	@if $breakpoint==xsm {
+		@media only screen and (max-width: $bp-xsm) {
+			@content;
+		}
+	}
+	@if $breakpoint==sm {
+		@media only screen and (max-width: $bp-sm) {
+			@content;
+		}
+	}
+	@if $breakpoint==md {
+		@media only screen and (max-width: $bp-md) {
+			@content;
+		}
+	}
+	@if $breakpoint==lg {
+		@media only screen and (max-width: $bp-lg) {
+			@content;
+		}
+	}
+	@if $breakpoint==xlg {
+		@media only screen and (max-width: $bp-xlg) {
+			@content;
+		}
+	}
+	@if $breakpoint==xxlg {
+		@media only screen and (min-width: $bp-xxlg) {
+			@content;
+		}
+	}
+}
