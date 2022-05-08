@@ -13,12 +13,16 @@
 	transform: translate(-50%, -50%);
 }
 
+@mixin color-light-dark {
+	&--light {
+		color: var(--color-gray-light-1);
+	}
+	&--dark {
+		color: var(--color-gray-dark-1);
+	}
+}
+
 /* --------------------------- Media Query Manager -------------------------- */
-// 0-600px phone;
-// 600px-900px tablet-portrait;
-// 900px-1200px tablet-landscape;
-// [1200px-1800px] desktop
-// 1800px + widescreen;
 
 @mixin respond($breakpoint) {
 	@if $breakpoint==xxxsm {

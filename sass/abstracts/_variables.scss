@@ -1,21 +1,25 @@
 /* --------------------------------- Colors --------------------------------- */
 
 :root {
-
-	--gray-light-1: #faf9f9;
-	--gray-light-2: #f4f2f2;
-	--gray-light-3: #f0eeee;
-	--gray-light-4: #ccc;
-	--gray-dark-1: #333;
-	--gray-dark-2: #777;
-	--gray-dark-3: #999;
+	--color-primary: #c69963;
+	--color-primary-dark: #b28451;
+	--color-secondary: #101d2c;
+	--color-gray-light-1: #f9f7f6;
+	--color-gray-light-2: #aaa;
+	--color-gray-dark-1: #54483a;
+	--color-gray-dark-2: #6d5d4b;
 
 	/* --------------------------------- Shadows -------------------------------- */
 
 	--shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 	--shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.1);
-}
 
+	/* ---------------------------------- Fonts --------------------------------- */
+	--font-primary: 'Nunito', sans-serif;
+	--font-display: 'Josefin Sans', sans-serif;
+
+	/* --------------------------------- clamps --------------------------------- */
+}
 
 /* ------------------------------ Break points ------------------------------ */
 
@@ -27,7 +31,3 @@ $bp-sm: 53.75em;
 $bp-xsm: 50em;
 $bp-xxsm: 37.5em;
 $bp-xxxsm: 32.5em;
-
-    © 2022 GitHub, Inc.
-
-    Terms

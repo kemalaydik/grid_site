@@ -1,4 +1,33 @@
 body {
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 1.6rem;
+	font-family: var(--font-primary);
+	line-height: 1.6;
+}
+
+%heading {
+	font-family: var(--font-display);
+	font-weight: 400;
+}
+
+.heading-1 {
+	@extend %heading;
+}
+.heading-2 {
+	@extend %heading;
+	@include color-light-dark;
+	font-size: 4rem;
+	font-style: italic;
+	line-height: 1;
+}
+.heading-3 {
+	@extend %heading;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	color: var(--color-primary);
+}
+.heading-4 {
+	@extend %heading;
+	font-size: 1.9rem;
+	@include color-light-dark;
 }
