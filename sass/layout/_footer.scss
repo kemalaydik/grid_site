@@ -1,4 +1,42 @@
 .footer {
-	background-color: violet;
+	background-color: var(--color-secondary);
 	grid-column: full-start/full-end;
+	padding: 10vw;
+	text-align: center;
+
+	.nav {
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+		justify-content: center;
+		li {
+			margin-top: 2rem;
+			transition: all 0.2s;
+
+			&:hover {
+				transform: translateY(-3px);
+			}
+		}
+		a:link,
+		a:visited {
+			color: white;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-family: var(--font-display);
+			padding: 1.5rem;
+			transition: all 0.2s;
+		}
+
+		a:hover,
+		a:active {
+			background-color: rgba(white, 0.05);
+		}
+	}
+
+	&__text {
+		margin: 3rem auto 0;
+		color: var(--color-gray-light-2);
+		width: 70%;
+	}
 }

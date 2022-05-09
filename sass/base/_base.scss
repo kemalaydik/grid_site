@@ -12,6 +12,21 @@
 html {
 	font-size: 62.5%;
 	box-sizing: border-box;
+	@include respond(xlg) {
+		font-size: 60%;
+	}
+	@include respond(lg) {
+		font-size: 57.5%;
+	}
+	@include respond(md) {
+		font-size: 55%;
+	}
+	@include respond(sm) {
+		font-size: 52.5%;
+	}
+	@include respond(xsm) {
+		font-size: 50%;
+	}
 }
 
 body {

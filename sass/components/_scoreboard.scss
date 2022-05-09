@@ -1,4 +1,38 @@
 .scoreboard {
 	background-color: teal;
 	grid-column: col-start 7 / full-end;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: var(--color-secondary);
+	padding: 3rem 0;
+	gap: 2rem;
+	@include respond(xxsm) {
+		grid-column: full-start/full-end;
+	}
+
+	&__items {
+		display: grid;
+		align-items: center;
+		grid-template-columns: min-content 1fr;
+		row-gap: 5vh;
+		column-gap: 2rem;
+
+		@include respond(xxsm) {
+			grid-template-columns: repeat(3, min-content max-content);
+		}
+		@include respond(xxxsm) {
+			grid-template-columns: min-content max-content;
+		}
+	}
+
+	&__img {
+		width: 4rem;
+		border-radius: 50%;
+	}
+
+	&__text {
+		color: var(--color-gray-light-2);
+	}
 }
